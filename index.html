@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>
+            <img src="./images/weniv-logo.png" alt="logo" />
+        </h1>
+        <main>
+            <h2>TIMER</h2>
+            <div class="line"></div>
+            <fieldset class="inputs">
+                <legend class="a11y-hidden">시분초</legend>
+                <label for="input-hrs" >HRS</label>
+                <input type="number" id="input-hrs"  value="00"/>
+                <label for="input-min">MIN</label>
+                <input type="number" id="input-min" value="00"/>
+                <label for="input-sec">SEC</label>
+                <input type="number" id="input-sec" value="00" min="10"/>
+            </fieldset>
+            <div class="btns">
+                <button type="button" class="btn-start" onclick="startTimer()" disabled>START</button>
+                <button type="button" class="btn-reset" onclick="resetTimer()" disabled>RESET</button>
+                <!-- <button type="button" disabled> </button> -->
+            </div>
+        </main>
+        <footer>ⓒ WENIV Corp.</footer>
+        <script src="./timer.js"></script>
+    </body>
+</html>
